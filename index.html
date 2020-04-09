@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href = "reset.css">
+    <link rel="stylesheet" href = "styles.css">
+    <title>Presentación para NewsRoom</title>
+    <style>
+        body{
+            font-family: 'Roboto', sans-serif;
+            background-color: #F5F5F5; //#0086ff;
+            padding: 0;
+            margin: 0;
+            font-size: 100%;
+            font-size: 62.5%;
+        }
+
+        strong{
+            font-weight: 600;
+        }
+        
+        .container{
+            width: 100%;
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+
+        header{
+            background-color: #0F4C81;
+            padding: 46px;
+            text-align: center;
+        }
+
+        header h1{
+            font-size: 3.6em;
+            font-weight: 500;
+            color: white;//#333333;
+            margin: 0;
+            padding: 0;
+        }
+        header h1 span{
+            display: inline-block;
+            width: 200px;
+            height: auto;
+            position: relative;
+            top: 2px;
+            padding: 0 4px;
+        }
+
+        header h1 span img{
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+        }
+
+        .video{
+            max-width: 800px;
+            height: auto;
+            display: block;
+            margin: 30px auto;
+            border: 4px solid white;
+        }
+
+        .videoWrapper {
+            position: relative;
+            padding-bottom: 53.25%; /* 16:9 */
+            padding-top: 25px;
+            height: 0;
+        }
+
+        .videoWrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        main{
+            text-align: center;
+            padding: 46px;
+        }
+
+        main h2{
+            color: #0F4C81;
+            font-size: 3em;
+			text-align: center;
+            padding: 0;
+            margin: 0;
+            font-weight: 400;
+            margin-bottom: 0px;
+        }
+        main h2 strong{
+            font-weight: 600;
+        }
+        main h2 span{
+            font-weight: 500;
+            display: inline-block;
+            padding: 0 10px;
+        }
+
+        p{
+            font-size: 18px;
+            display: inline-block;
+            margin: 0 center;
+            position:relative;
+            color: #00B7ED;
+            font-weight: 400;
+        }
+
+        p.intro:before,
+        p.intro:after{
+            width: 100px;
+            height: 1px;
+            background-color: #00B7ED;
+            content:"";
+            position: absolute;
+            top: 50%;
+        }
+
+        p.intro:before{
+            right: calc(100% + 20px);
+        }
+
+        p.intro:after{
+            left: calc(100% + 20px)
+        }
+		
+		footer{
+            background-color: #0F4C81;
+            padding: 46px;
+            text-align: center;
+        }
+
+        footer h3{
+            font-size: 1.6em;
+            font-weight: 500;
+            color: #F5F5F5;//#333333;
+            margin: 0;
+            padding: 0;
+        }
+        footer h3 span{
+            display: inline-block;
+            width: 200px;
+            height: auto;
+            position: relative;
+            top: 2px;
+            padding: 0 4px;
+        }
+    </style>
+</head>
+<body>
+    <section id="wrapper">
+        <header>
+            <div class="container">
+                <h1>¿Porqué debería estar en <span><img src="./logo_newsroom.png" width="275" height="46" alt="Newsroom"></span> ?</h1>
+            </div>
+        </header>
+        <main>
+            <h2><span>“</span>Yo también quiero <strong>formar <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;parte de algo grande</strong><span>”</span></h2>
+            <p class="intro"><strong>Pulsa play</strong> y conóceme un poco más</p>
+            <section class="video">
+                <div class="videoWrapper">
+                    <<iframe width="560" height="315" src="https://www.youtube.com/embed/zI5bdjvCIFE?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </section>
+        </main>
+        
+    </section>
+</body>
+        <footer>
+            <div class="container">
+                <h3>contacto</h3>
+				<a title="Enlace a Linkedin" href="https://es.linkedin.com/in/amperezgar" target="_blank"><img src="./logo_newsroom.png" alt="Enlace a Linkedin Ana Mª Pérez García" /></a>
+
+            </div>
+        </footer>
+		
+</html>
