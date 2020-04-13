@@ -143,29 +143,49 @@
             padding: 0;
         }
         footer h3 span{
-            display: inline-block;
+//display: inline-block;
             width: 200px;
             height: auto;
             position: relative;
             top: 2px;
             padding: 0 4px;
         }
+		.flex-container {
+    display: -webkit-flex;
+	flex-direction: row
+    display: flex;
+    min-height: 100%;
+			.container {
+		justify-content: start;
+		}
+}
+	.container {
+		justify-content: end;
+		align-self: flex-end;
+	}
+
     </style>
 </head>
 <body>
     <section id="wrapper">
         <header>
-            <div class="container">
-                <h1>¿Porqué debería estar en <span><img src="./logo_newsroom.png" width="275" height="46" alt="Newsroom"></span> ?</h1>
-            </div>
+		<div class="flex-container">
+            <div class="container"<span><img src="./logo_newsroom.png" alt="Newsroom" width="350" height="65"/></span>
+			</div>
+			<div class="container"<span><img src="./logo_alive.png"  alt="aLiveNews"width="200" height="40"/></span>
+			</div>
+		</div>
+
         </header>
         <main>
-            <h2><span>“</span>Yo también quiero <strong>formar <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;parte de algo grande</strong><span>”</span></h2>
-            <p class="intro"><strong>Pulsa play</strong> y conóceme un poco más</p>
+            <h2><span><strong>“</strong></span>Para contarlo... <strong>¡Cuenta conmigo! ”<br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong></h2>
+            <p class="intro"><strong>por Ana Pérez García</strong></p>
             <section class="video">
                 <div class="videoWrapper">
-                    <<iframe width="560" height="315" src="https://www.youtube.com/embed/zI5bdjvCIFE?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
+                    <!--<iframe width="560" height="315" src="https://www.youtube.com/embed/zI5bdjvCIFE?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe-->
+                    <<iframe width="560" height="315" src="https://www.youtube.com/embed/HO80H0No9sA?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+https://www.youtube.com/embed/HO80H0No9sA?rel=0
+				</div>
             </section>
         </main>
         
@@ -173,8 +193,8 @@
 </body>
         <footer>
             <div class="container">
-                <h3>contacto</h3>
-				<a title="Enlace a Linkedin" href="https://es.linkedin.com/in/amperezgar" target="_blank"><img src="./logo_newsroom.png" alt="Enlace a Linkedin Ana Mª Pérez García" /></a>
+                <h3>Consulta mi página de Linkedin</h3><br><br> 
+				<a title="Enlace a Linkedin" width="100" height="100" href="https://es.linkedin.com/in/amperezgar" target="_blank"><img src="./logo_linkedin .png" alt="Enlace a Linkedin Ana Pérez García" /></a>
 
             </div>
         </footer>
